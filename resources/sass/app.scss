@@ -1,0 +1,21 @@
+// Fonts
+@import url('http://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~@jkryszto/mdb-for-laravel/scss/mdb';
+
+
+
+
+nav {
+  background-color: $goldenfizz;
+  color: $stroomboli;
+}
+
+
+
