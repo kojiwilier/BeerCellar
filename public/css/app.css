@@ -22609,6 +22609,8 @@ nav {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
