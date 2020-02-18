@@ -22607,3 +22607,8 @@ nav {
   color: rgba(46, 74, 71, 0.71);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
