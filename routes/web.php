@@ -15,7 +15,7 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/beers', 'BeerController@index')->name('beers');
 Route::get('/beers/new', 'BeerController@new')->name('beers.new');
 Route::post('/beers/new', 'BeerController@regist')->name('beers.regist');

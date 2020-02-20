@@ -24,19 +24,15 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-
-            <a href="{{ route('beers') }}"  class='ml-3'>
-            {{ __('Our Beers')}}
-            </a>
-
-            <a href="{{ route('mybeers') }}"  class='ml-3'>
-                {{ __('my Beers')}}
-            </a>
-
-            <a href="{{ route('myactions',['id'=>Auth::id()]) }}"  class='ml-3'>
+                <a href="{{ route('beers') }}"  class='ml-3'>
+                    {{ __('Our Beers')}}</a>
+                <a href="{{ route('mybeers') }}"  class='ml-3'>
+                    {{ __('my Beers')}}
+                </a>
+                <a href="{{ route('myactions',['id'=>Auth::id()]) }}"  class='ml-3'>
                     {{ __('my Activity')}}
                 </a>
 
@@ -68,7 +64,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                        <img src="{{ str_replace('public','/storage', Auth::user()->image) }}" alt="none" height="20" class='nav_profile'>　{{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

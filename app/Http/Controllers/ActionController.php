@@ -11,7 +11,7 @@ class ActionController extends Controller
 {
 public function showMyAction($id){
 
-        $myActions = Action::where('user_id',$id)->get();
+        $myActions = Action::where('user_id',$id)->orderby('created_at', 'desc')->get();
         return view('myactions',['myActions'=>$myActions]);
 
     }

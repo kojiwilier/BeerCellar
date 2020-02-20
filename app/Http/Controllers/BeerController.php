@@ -65,7 +65,7 @@ class BeerController extends Controller
             $category = new Category;
             $category->fill($request->category)->save();
         }
-        return redirect('/');
+        return redirect('/home');
     }
 
 
