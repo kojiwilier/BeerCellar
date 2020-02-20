@@ -10,7 +10,7 @@
                         <div class="card-body  row ">
                             @foreach($mybeers as $mybeer)
                             <div class='col-md-4 mb-4 '>
-                            <div class=' border card   justify-content-center '>
+                            <div class=' card  justify-content-center'>
 
                                 <a href="/beer/{{ $mybeer->beer->id }}">
                                 <img src="{{ str_replace('public','/storage',$mybeer->beer->pic1) }}" alt="none" height="200" class='d-block mx-auto'>
